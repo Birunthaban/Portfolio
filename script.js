@@ -12,3 +12,21 @@ navLinks.forEach((navLinks) => {
     hamMenuIcon.classList.toggle("fa-times");
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.getElementById("contact-form");
+    
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      
+      // Get form input values
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+      
+      // You can perform further actions here, such as sending the data to a server
+      
+      // Clear form inputs after submission
+      contactForm.reset();
+    });
+  });
+  

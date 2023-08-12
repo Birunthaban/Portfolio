@@ -635,5 +635,55 @@ nav ul.active {
       width: 100%; /* Full width for 1 column */
     }
   }
+  .contact-section {
+    background-color: #f9f9f9;
+    padding: 5rem 0;
+    text-align: center;
+  }
   
+  .contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-container h1 {
+    font-size: 4rem;
+    color: #eb4034;
+    margin-bottom: 3rem;
+  }
+  
+  #contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: left;
+  }
+  
+  #contact-form label {
+    font-size: 1.8rem;
+    color: #1e1919;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #contact-form button {
+    padding: 1rem 2rem;
+    background-color: #0b0c0c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #contact-form button:hover {
+    background-color: #1e272e;
+  }
   
