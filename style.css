@@ -480,4 +480,40 @@ nav ul.active {
     }
   }
   
-
+/* Contact Bar */
+.contact-bar {
+    position: fixed;
+    left: 1rem; /* Adjust the distance from the left edge */
+    top: 50%; /* Position it vertically in the middle */
+    transform: translateY(-50%); /* Center it vertically */
+    width: 3rem; /* Adjust the width of the vertical bar */
+    background-color: #07090a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px; /* Add rounded corners */
+    z-index: 1000; /* Make sure it's above other content */
+  }
+  
+  .contact-link {
+    color: #eb4034;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem; /* Adjust spacing between links */
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .contact-link:hover {
+    transform: scale(1.1);
+    background-color: #0b0c0c;
+  }
+  /* Media Query for Screens up to 767px */
+@media only screen and (max-width: 767px) {
+    .contact-bar {
+      display: none; /* Hide the contact bar on smaller screens */
+    }
+  }
+  
+  
