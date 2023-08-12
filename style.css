@@ -440,6 +440,9 @@ nav ul.active {
     align-items: center; /* Center content vertically in each cell */
     margin-top: 2rem; /* Add spacing between heading and grid */
   }
+  .skills-section h1{
+    color: #eb4034;
+  }
   
   .skills-grid img {
     max-width: 100%;
