@@ -1,3 +1,4 @@
+// mobile responsive 
 let hamMenuIcon = document.getElementById("ham-menu");
 let navBar = document.getElementById("nav-bar");
 let navLinks = navBar.querySelectorAll("li");
@@ -12,6 +13,7 @@ navLinks.forEach((navLinks) => {
     hamMenuIcon.classList.toggle("fa-times");
   });
 });
+// getting form details
 document.addEventListener("DOMContentLoaded", function () {
     const contactForm = document.getElementById("contact-form");
     
@@ -23,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const email = document.getElementById("email").value;
       const message = document.getElementById("message").value;
       
-      // You can perform further actions here, such as sending the data to a server
+      // todo : save it to database
       
       // Clear form inputs after submission
       contactForm.reset();

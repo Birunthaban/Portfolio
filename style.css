@@ -5,9 +5,8 @@
 }
 html {
   font-size: 62.5%;
- 
-    scroll-behavior: smooth;
-  
+
+  scroll-behavior: smooth;
 }
 *:not(i) {
   font-family: "Poppins", sans-serif;
@@ -306,14 +305,13 @@ nav ul.active {
 }
 
 .sub-section {
-    position: static;
+  position: static;
   text-align: center;
   /* margin-bottom: 1rem; */
   max-width: 50vw; /* Set a maximum width for the section */
   height: 80%;
   margin: 0 auto; /* Center the section horizontally */
   padding: 1rem;
-  
 }
 .sub-section h1 {
   font-size: 3.5rem;
@@ -353,8 +351,6 @@ nav ul.active {
 }
 
 .timeline-content {
-    
-  
   background-color: #f9f9f9;
   padding: 1rem;
   border-radius: 8px;
@@ -362,375 +358,375 @@ nav ul.active {
 }
 /* Media Query for Screens up to 991px */
 @media only screen and (max-width: 991px) {
-    #know-more {
-      padding: 3rem 0; /* Adjust padding */
-    }
-    .sub-section {
-      max-width: 80vw; /* Adjust maximum width for the section */
-      margin: 0 auto; /* Center the section horizontally */
-      padding: 1rem;
-    }
-    .sub-section h1 {
-      font-size: 2.5rem; /* Adjust heading font size */
-    }
-    .sub-section h2 {
-      font-size: 2rem; /* Adjust subheading font size */
-      margin-bottom: 1.5rem;
-    }
-    .sub-section li,
-    .sub-section p {
-      font-size: 1.4rem; /* Adjust font size for list items and paragraphs */
-    }
+  #know-more {
+    padding: 3rem 0; /* Adjust padding */
   }
-  
-  /* Media Query for Screens up to 767px */
-  @media only screen and (max-width: 767px) {
-    #know-more {
-      padding: 2rem 0; /* Further adjust padding */
-    }
-    .sub-section {
-      max-width: 90vw; /* Further adjust maximum width for the section */
-    }
-    .sub-section h1 {
-      font-size: 2rem; /* Further adjust heading font size */
-    }
-    .sub-section h2 {
-      font-size: 1.8rem; /* Further adjust subheading font size */
-    }
-    .sub-section li,
-    .sub-section p {
-      font-size: 1.3rem; /* Further adjust font size for list items and paragraphs */
-    }
+  .sub-section {
+    max-width: 80vw; /* Adjust maximum width for the section */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 1rem;
   }
-  
-  /* Media Query for Screens up to 575px */
-  @media only screen and (max-width: 575px) {
-    #know-more {
-      padding: 1rem 0; /* Further adjust padding */
-    }
-    .sub-section {
-      max-width: 100vw; /* Adjust maximum width for the smallest screens */
-    }
-    .sub-section h1 {
-      font-size: 1.8rem; /* Further adjust heading font size */
-    }
-    .sub-section h2 {
-      font-size: 1.6rem; /* Further adjust subheading font size */
-    }
-    .sub-section li,
-    .sub-section p {
-      font-size: 1.2rem; /* Further adjust font size for list items and paragraphs */
-    }
+  .sub-section h1 {
+    font-size: 2.5rem; /* Adjust heading font size */
   }
-  .skills-section {
-    background-color: #f9f9f9;
-    padding: 5rem 0;
-    text-align: center;
-    background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+  .sub-section h2 {
+    font-size: 2rem; /* Adjust subheading font size */
+    margin-bottom: 1.5rem;
   }
-  
-  .skills-container {
-    max-width: 1200px;
-    margin: 0 auto;
+  .sub-section li,
+  .sub-section p {
+    font-size: 1.4rem; /* Adjust font size for list items and paragraphs */
   }
-  
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr); /* 5 columns */
-    grid-template-rows: repeat(3, auto); /* 4 rows */
-    gap: 1.5rem; /* Gap between images */
-    justify-items: center; /* Center content horizontally in each cell */
-    align-items: center; /* Center content vertically in each cell */
-    margin-top: 2rem; /* Add spacing between heading and grid */
-  }
-  .skills-section h1{
-    color: #eb4034;
-  }
-  
-  .skills-grid img {
-    max-width: 100%;
-    height: auto;
-    max-height: 75%;
-  }
-  
-  /* Media Queries */
-  
-  /* Adjustments for Screens up to 991px */
-  @media only screen and (max-width: 991px) {
-    .skills-container {
-      padding: 3rem 0; /* Adjust padding */
-    }
-  }
-  
-  /* Adjustments for Screens up to 767px */
-  @media only screen and (max-width: 767px) {
-    .skills-container {
-      padding: 2rem 0; /* Further adjust padding */
-    }
-    .skills-grid {
-      grid-template-columns: repeat(3, 1fr); /* 3 columns on smaller screens */
-      gap: 1rem; /* Reduce gap between images */
-    }
-  }
-  
-  /* Adjustments for Screens up to 575px */
-  @media only screen and (max-width: 575px) {
-    .skills-container {
-      padding: 1rem 0; /* Further adjust padding */
-    }
-    .skills-grid {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns on smallest screens */
-    }
-  }
-  
-/* Contact Bar */
-.contact-bar {
-    position: fixed;
-    left: 1rem; /* Adjust the distance from the left edge */
-    top: 50%; /* Position it vertically in the middle */
-    transform: translateY(-50%); /* Center it vertically */
-    width: 3rem; /* Adjust the width of the vertical bar */
-    background-color: #07090a;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px; /* Add rounded corners */
-    z-index: 1000; /* Make sure it's above other content */
-  }
-  
-  .contact-link {
-    color: #eb4034;
-    color: white;
-    font-size: 2.5rem;
-    margin-bottom: 1rem; /* Adjust spacing between links */
-    text-decoration: none;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .contact-link:hover {
-    transform: scale(1.1);
-    background-color: #0b0c0c;
-  }
-  /* Media Query for Screens up to 767px */
+}
+
+/* Media Query for Screens up to 767px */
 @media only screen and (max-width: 767px) {
-    .contact-bar {
-      display: none; /* Hide the contact bar on smaller screens */
-    }
+  #know-more {
+    padding: 2rem 0; /* Further adjust padding */
   }
-  
-  .project-section {
-    background-color: #f9f9f9;
-    padding: 5rem 0;
-    text-align: center;
+  .sub-section {
+    max-width: 90vw; /* Further adjust maximum width for the section */
   }
-  
-  .projects-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .sub-section h1 {
+    font-size: 2rem; /* Further adjust heading font size */
   }
-  
-  .project {
-    width: calc(25% - 2rem); /* Adjust the width and spacing as needed */
-    margin-bottom: 2rem;
-    position: relative;
+  .sub-section h2 {
+    font-size: 1.8rem; /* Further adjust subheading font size */
   }
-  
-  .project-image {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    width: 100%; /* Set the width for the image container */
-    height: 0; /* Set the height to 0 to maintain aspect ratio */
-    padding-bottom: 75%; /* Adjust this value to achieve your desired aspect ratio */
+  .sub-section li,
+  .sub-section p {
+    font-size: 1.3rem; /* Further adjust font size for list items and paragraphs */
   }
-  
-  .project-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: fill; /* Ensure the image covers the container */
-    transition: filter 0.5s ease;
+}
+
+/* Media Query for Screens up to 575px */
+@media only screen and (max-width: 575px) {
+  #know-more {
+    padding: 1rem 0; /* Further adjust padding */
   }
-  
-  .project-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.5s ease;
+  .sub-section {
+    max-width: 100vw; /* Adjust maximum width for the smallest screens */
   }
-  
-  .project:hover .project-image img {
-    filter: blur(5px);
+  .sub-section h1 {
+    font-size: 1.8rem; /* Further adjust heading font size */
   }
-  
-  .project:hover .project-overlay {
-    opacity: 1;
+  .sub-section h2 {
+    font-size: 1.6rem; /* Further adjust subheading font size */
   }
-  
-  .project-overlay p {
-    color: white;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    text-align:center;
+  .sub-section li,
+  .sub-section p {
+    font-size: 1.2rem; /* Further adjust font size for list items and paragraphs */
   }
-  
-  .project-link {
-    color: #eb4034;
-    text-decoration: none;
-    font-weight: 600;
-    border: 2px solid #eb4034;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .project-link:hover {
-    background-color: #eb4034;
-    color: white;
-  }
-  .project-section h1 {
-    font-size: 4rem;
-    color: #eb4034;
-    margin-bottom: 3rem;
-    text-align: center;
-  }
+}
+.skills-section {
+  background-color: #f9f9f9;
+  padding: 5rem 0;
+  text-align: center;
+  background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 5 columns */
+  grid-template-rows: repeat(3, auto); /* 4 rows */
+  gap: 1.5rem; /* Gap between images */
+  justify-items: center; /* Center content horizontally in each cell */
+  align-items: center; /* Center content vertically in each cell */
+  margin-top: 2rem; /* Add spacing between heading and grid */
+}
+.skills-section h1 {
+  color: #eb4034;
+}
+
+.skills-grid img {
+  max-width: 100%;
+  height: auto;
+  max-height: 75%;
+}
+
 /* Media Queries */
 
 /* Adjustments for Screens up to 991px */
 @media only screen and (max-width: 991px) {
-    .project {
-      width: calc(33.33% - 2rem); /* Adjust width for 3 columns */
-    }
-    
-    .projects-container {
-      justify-content: flex-start; /* Align projects to the start of the row */
-      gap: 2rem; /* Add gap between projects */
-    }
+  .skills-container {
+    padding: 3rem 0; /* Adjust padding */
   }
-  
-  /* Adjustments for Screens up to 767px */
-  @media only screen and (max-width: 767px) {
-    .project {
-      width: calc(50% - 2rem); /* Adjust width for 2 columns */
-    }
+}
+
+/* Adjustments for Screens up to 767px */
+@media only screen and (max-width: 767px) {
+  .skills-container {
+    padding: 2rem 0; /* Further adjust padding */
   }
-  
-  /* Adjustments for Screens up to 575px */
-  @media only screen and (max-width: 575px) {
-    .project {
-      width: 100%; /* Full width for 1 column */
-    }
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on smaller screens */
+    gap: 1rem; /* Reduce gap between images */
   }
-  .contact-section {
-    background-color: #f9f9f9;
-    padding: 5rem 0;
-    text-align: center;
+}
+
+/* Adjustments for Screens up to 575px */
+@media only screen and (max-width: 575px) {
+  .skills-container {
+    padding: 1rem 0; /* Further adjust padding */
   }
-  
-  .contact-container {
-    max-width: 800px;
-    margin: 0 auto;
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smallest screens */
   }
-  
-  .contact-container h1 {
-    font-size: 4rem;
-    color: #eb4034;
-    margin-bottom: 3rem;
+}
+
+/* Contact Bar */
+.contact-bar {
+  position: fixed;
+  left: 1rem; /* Adjust the distance from the left edge */
+  top: 50%; /* Position it vertically in the middle */
+  transform: translateY(-50%); /* Center it vertically */
+  width: 3rem; /* Adjust the width of the vertical bar */
+  background-color: #07090a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px; /* Add rounded corners */
+  z-index: 1000; /* Make sure it's above other content */
+}
+
+.contact-link {
+  color: #eb4034;
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1rem; /* Adjust spacing between links */
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-link:hover {
+  transform: scale(1.1);
+  background-color: #0b0c0c;
+}
+/* Media Query for Screens up to 767px */
+@media only screen and (max-width: 767px) {
+  .contact-bar {
+    display: none; /* Hide the contact bar on smaller screens */
   }
-  
-  #contact-form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    text-align: left;
+}
+
+.project-section {
+  background-color: #f9f9f9;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  width: calc(25% - 2rem); /* Adjust the width and spacing as needed */
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  width: 100%; /* Set the width for the image container */
+  height: 0; /* Set the height to 0 to maintain aspect ratio */
+  padding-bottom: 75%; /* Adjust this value to achieve your desired aspect ratio */
+}
+
+.project-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* Ensure the image covers the container */
+  transition: filter 0.5s ease;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.project:hover .project-image img {
+  filter: blur(5px);
+}
+
+.project:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay p {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.project-link {
+  color: #eb4034;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid #eb4034;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #eb4034;
+  color: white;
+}
+.project-section h1 {
+  font-size: 4rem;
+  color: #eb4034;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+/* Media Queries */
+
+/* Adjustments for Screens up to 991px */
+@media only screen and (max-width: 991px) {
+  .project {
+    width: calc(33.33% - 2rem); /* Adjust width for 3 columns */
   }
-  
-  #contact-form label {
-    font-size: 1.8rem;
-    color: #1e1919;
+
+  .projects-container {
+    justify-content: flex-start; /* Align projects to the start of the row */
+    gap: 2rem; /* Add gap between projects */
   }
-  
-  #contact-form input,
-  #contact-form textarea {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.6rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+}
+
+/* Adjustments for Screens up to 767px */
+@media only screen and (max-width: 767px) {
+  .project {
+    width: calc(50% - 2rem); /* Adjust width for 2 columns */
   }
-  
-  #contact-form button {
-    padding: 1rem 2rem;
-    background-color: #0b0c0c;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+}
+
+/* Adjustments for Screens up to 575px */
+@media only screen and (max-width: 575px) {
+  .project {
+    width: 100%; /* Full width for 1 column */
   }
-  
-  #contact-form button:hover {
-    background-color: #1e272e;
-  }
-/* Existing CSS code */
+}
+/* Contact Section Styling */
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-container h1 {
+  font-size: 4rem;
+  color: #eb4034;
+  margin-bottom: 3rem;
+}
+
+#contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+#contact-form label {
+  font-size: 1.8rem;
+  color: #1e1919;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact-form button {
+  padding: 1rem 2rem;
+  background-color: #0b0c0c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #1e272e;
+}
+
 
 /* Footer Styles */
 .footer-section {
-    background-color: #0b0c0c;
-    color: #ffffff;
-    padding: 2rem 0;
-    text-align: center;
-  }
-  
+  background-color: #0b0c0c;
+  color: #ffffff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.footer-container span {
+  color: #eb4034;
+}
+
+.footer-container p {
+  font-size: 1.6rem;
+}
+
+.footer-container a {
+  color: #eb4034;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Footer */
+@media only screen and (max-width: 767px) {
   .footer-container {
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 1rem;
   }
-  .footer-container span{
-    color: #eb4034;
-  }
-  
+
   .footer-container p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
-  
-  .footer-container a {
-    color: #eb4034;
-    text-decoration: none;
+}
+
+@media only screen and (max-width: 575px) {
+  .footer-container p {
+    font-size: 1.2rem;
   }
-  
-  .footer-container a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Media Queries for Footer */
-  @media only screen and (max-width: 767px) {
-    .footer-container {
-      padding: 1rem;
-    }
-  
-    .footer-container p {
-      font-size: 1.4rem;
-    }
-  }
-  
-  @media only screen and (max-width: 575px) {
-    .footer-container p {
-      font-size: 1.2rem;
-    }
-  }
-    
+}
