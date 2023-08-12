@@ -1,0 +1,299 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  *:not(i) {
+    font-family: "Poppins", sans-serif;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    background-color: #0b0c0c;
+    padding: 1rem 5rem;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  nav a {
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+  nav a#logo {
+    color: #fffdfd;
+    font-weight: 900;
+    font-size: 3rem;
+    color:teal;
+  }
+  nav ul a {
+    color: #ffffff;
+    font-weight: 600;
+  }
+  nav ul a:hover {
+    border-bottom: 2px solid #ffffff;
+  }
+  section#home {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  #ham-menu {
+    display: none;
+  }
+  nav ul.active {
+    left: 0;
+  }
+  @media only screen and (max-width: 991px) {
+    html {
+      font-size: 56.25%;
+    }
+    header {
+      padding: 2.2rem 2rem;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    html {
+      font-size: 50%;
+    }
+    #ham-menu {
+      display: block;
+      color: #ffffff;
+    }
+    nav a#logo,
+    #ham-menu {
+      font-size: 3.2rem;
+    }
+    nav ul {
+      background-color: black;
+      position: fixed;
+      left: -100vw;
+      top: 73.6px;
+      width: 100vw;
+      height: calc(100vh - 73.6px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transition: 1s;
+      gap: 0;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    html {
+      font-size: 46.87%;
+    }
+    header {
+      padding: 2rem 3rem;
+    }
+    nav ul {
+      top: 65.18px;
+      height: calc(100vh - 65.18px);
+    }
+  }
+  /*  */
+ 
+  #about {
+    background-color: #f9f9f9;
+    padding: 6rem 0;
+    text-align: center; /* Center the content horizontally */
+    background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+    justify-content: center; /* Center the columns horizontally */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-column {
+    flex: 1;
+    padding: 2rem;
+    max-width: 50%; /* Each column takes up half the available width */
+  }
+  
+  .about-column img {
+    padding-top:5%;
+    padding-bottom: 0%;
+    max-width: 80%;
+    height: auto;
+
+
+  }
+  
+  .about-column p {
+    font-size: 1.8rem;
+  }
+  .about-column  h1{
+    font-size: 6rem;
+    color: #1e1919;
+  }
+  .about-column  h2{
+    font-size: 2.5rem;
+    color: teal;
+  }
+  /* Existing CSS for larger screens */
+
+/* Media Query for Screens up to 991px */
+@media only screen and (max-width: 991px) {
+    .about-container {
+      flex-direction: column; /* Stack columns vertically */
+      align-items: center; /* Center columns horizontally */
+    }
+    .about-column {
+      max-width: 100%; /* Take up full width on smaller screens */
+      text-align: center; /* Center content */
+      padding: 1rem; /* Adjust padding */
+    }
+  }
+  
+  /* Media Query for Screens up to 767px */
+  @media only screen and (max-width: 767px) {
+    .about-container {
+      padding: 3rem 0; /* Adjust padding */
+    }
+    .about-column img {
+      max-width: 60%; /* Adjust image size */
+    }
+    .about-column h1 {
+      font-size: 4rem; /* Adjust heading font size */
+    }
+    .about-column h2 {
+      font-size: 2rem; /* Adjust subheading font size */
+    }
+    .about-column p {
+      font-size: 1.6rem; /* Adjust paragraph font size */
+    }
+  }
+  
+  /* Media Query for Screens up to 575px */
+  @media only screen and (max-width: 575px) {
+    .about-container {
+      padding: 2rem 0; /* Adjust padding */
+    }
+    .about-column img {
+      max-width: 50%; /* Further adjust image size */
+    }
+    .about-column h1 {
+      font-size: 3.5rem; /* Further adjust heading font size */
+    }
+    .about-column h2 {
+      font-size: 1.8rem; /* Further adjust subheading font size */
+    }
+    .about-column p {
+      font-size: 1.4rem; /* Further adjust paragraph font size */
+    }
+  }
+/* Existing CSS for larger screens */
+
+.buttons {
+    display: flex;
+    gap: 1rem; /* Gap between buttons */
+    justify-content: center; /* Center buttons horizontally */
+    margin-top: 2rem; /* Add spacing between heading and buttons */
+  }
+  
+  .buttons .btn {
+    padding: 1rem 2rem;
+    background-color: #0b0c0c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttons .btn:hover {
+    background-color: #1e272e;
+  }
+  
+  .buttons .btn:first-child , .buttons .btn:nth-child(2) {
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: #0f1010; /* Adjust color to match your design */
+    color: #ffffff;
+  }
+  
+  .buttons .btn:first-child:hover,.buttons .btn:nth-child(2):hover {
+    background-color: #142938; /* Adjust hover color */
+  }
+  
+  /* Media Queries (add these below your existing media queries) */
+  
+  /* Media Query for Screens up to 991px */
+  @media only screen and (max-width: 991px) {
+    .buttons {
+      flex-direction: column; /* Stack buttons vertically on smaller screens */
+      align-items: center; /* Center buttons horizontally */
+    }
+    .buttons .btn:first-child,.buttons .btn:nth-child(2),
+    .buttons .btn {
+      width: 100%; /* Buttons take full width on smaller screens */
+      font-size: 1.2rem; /* Adjust button font size */
+    }
+    .buttons .btn {
+      padding: 0.8rem 1.5rem; /* Adjust button padding */
+      margin-bottom: 0.5rem; /* Spacing between buttons */
+    }
+  }
+  
+  /* Media Query for Screens up to 767px */
+  @media only screen and (max-width: 767px) {
+    .buttons .btn:first-child,.buttons .btn:nth-child(2),
+    .buttons .btn {
+      font-size: 1rem; /* Further adjust button font size */
+    }
+    .buttons .btn {
+      padding: 0.6rem 1.2rem; /* Further adjust button padding */
+    }
+  }
+  
+  
+  /* Media Queries (add these below your existing media queries) */
+  
+  /* Media Query for Screens up to 991px */
+  @media only screen and (max-width: 991px) {
+    .buttons {
+      flex-direction: column; /* Stack buttons vertically on smaller screens */
+    }
+    .buttons .btn {
+      width: 100%; /* Buttons take full width */
+      margin-bottom: 1rem; /* Spacing between buttons */
+    }
+  }
+  
+  /* Media Query for Screens up to 767px */
+  @media only screen and (max-width: 767px) {
+    .buttons .btn {
+      font-size: 1.4rem; /* Adjust button font size */
+      padding: 0.8rem 1.5rem; /* Adjust button padding */
+    }
+  }
+  
+  /* Media Query for Screens up to 575px */
+  @media only screen and (max-width: 575px) {
+    .buttons .btn {
+      font-size: 1.2rem; /* Further adjust button font size */
+      padding: 0.6rem 1.2rem; /* Further adjust button padding */
+    }
+  }
+    
+  
+
+      
