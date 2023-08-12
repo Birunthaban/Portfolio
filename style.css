@@ -686,4 +686,51 @@ nav ul.active {
   #contact-form button:hover {
     background-color: #1e272e;
   }
+/* Existing CSS code */
+
+/* Footer Styles */
+.footer-section {
+    background-color: #0b0c0c;
+    color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+  }
   
+  .footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .footer-container span{
+    color: #eb4034;
+  }
+  
+  .footer-container p {
+    font-size: 1.6rem;
+  }
+  
+  .footer-container a {
+    color: #eb4034;
+    text-decoration: none;
+  }
+  
+  .footer-container a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Queries for Footer */
+  @media only screen and (max-width: 767px) {
+    .footer-container {
+      padding: 1rem;
+    }
+  
+    .footer-container p {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media only screen and (max-width: 575px) {
+    .footer-container p {
+      font-size: 1.2rem;
+    }
+  }
+    
